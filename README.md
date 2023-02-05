@@ -3,10 +3,11 @@ This analysis created a binary classifier to predict whether applicants would be
 
 In this analysis, I created a Neural Network Model, compiled trained and evaluated the data, and developed an initial analysis of the results. In an effort to improve the overall accuracy, I attempted to optimize the model. Results are described below. 
 
-## 2.	Results: 
-o	Data Preprocessing
-The IS_SUCCESSFUL column was identified as the target variable
-The features included the following columns:
+## 2.	Results:
+## Data Preprocessing
+1). The IS_SUCCESSFUL column was identified as the target variable
+
+2). The features included the following columns:
 1.	Application Type
 2.	Affiliation
 3.	Classification
@@ -16,9 +17,10 @@ The features included the following columns:
 7.	Income Amt
 8.	Special Considerations
 9.	Ask Amt
-	The EIN and NAME columns were not considered to be targets or features and were therefore removed from the model.
 
-o	Compiling, Training, and Evaluating the Model
+3) The EIN and NAME columns were not considered to be targets or features and were therefore removed from the model.
+
+## Compiling, Training, and Evaluating the Model
 Using the Relu feature for the hidden layers and Sigmoid for the output, the model initially included 2 hidden layers at 8 and 5 neurons respectively. The numbers were kept low in an effort to avoid overfitting the model.
 
 For the initial analysis, the model produced a 73% accuracy level with a loss of about 55%
